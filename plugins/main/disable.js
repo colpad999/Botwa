@@ -29,7 +29,7 @@ Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 import config from '../../config.js'
 import { getDatabase } from '../../src/lib/rimuru-database.js'
 
-export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
+export const FEATURE_CREDIT = "Fitur By: colpad\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 
 
 const pluginConfig = {

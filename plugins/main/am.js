@@ -165,7 +165,7 @@ async function legacyAllMenuHandler(m, { sock, config: botConfig, db, uptime }) 
   caption += `> ⎆  [ ${mono("Nama")} : ${mono(pushName)}\n`;
   caption += `> ⎆  [ ${mono("Role")} : ${mono(roleText(m))}\n`;
   caption += `> ⎆  [ ${mono("Mode")} : ${mono(mode)}\n`;
-  caption += `> ⎆  [ ${mono("Author")} : ${mono(botConfig.bot?.developer || "Anita Putri Azzahra")}\n`;
+  caption += `> ⎆  [ ${mono("Author")} : ${mono(botConfig.bot?.developer || "colpad")}\n`;
   caption += `◣──────────❈\n\n`;
 
   caption += `◤───「 ${mono("INFO BOT")} 」──✦\n`;
@@ -243,7 +243,7 @@ async function externalDefaultAllMenuHandler(m, { sock, config: botConfig, db })
 
   const pushName = m.pushName || "User";
   const botName = botConfig.bot?.name || "Yalena Bot";
-  const devName = botConfig.bot?.developer || "Anita Putri Azzahra";
+  const devName = botConfig.bot?.developer || "colpad";
   const total = sorted.reduce((n, category) => {
     const key = String(category).toLowerCase();
     if (key === "owner" && !m.isOwner) return n;

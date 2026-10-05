@@ -137,7 +137,7 @@ const config = {
 
   sticker: {
     packname: "Yalena Bot", // Nama pack sticker
-    author: "Anita Putri Azzahra", // Author sticker
+    author: "colpad", // Author sticker
   },
 
   saluran: {

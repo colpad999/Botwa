@@ -12,7 +12,7 @@
  * Fitur hanya bekerja di grup dan membutuhkan bot sebagai admin.
  * Konfigurasi tersimpan di database/ocgc.json agar tetap aktif setelah restart.
  *
- * Fitur By: Anita Putri Azzahra
+ * Fitur By: colpad
  * Fitur SC Bot Yalena Bot 👑
  * Tiktok: https://tiktok.com/@anita.putri.azzah1
  * Saluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y

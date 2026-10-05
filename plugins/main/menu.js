@@ -168,7 +168,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 `┗━━━━━━━━━━━━━━━━━━┛\n\n` +
 `┏━━ ${pretty("BOT INFO")} ━━┓\n` +
 `┃  ${pretty("Bot")}     : ${botConfig.bot?.name || "Yalena Bot"}\n` +
-`┃  ${pretty("Author")}  : ${botConfig.bot?.developer || "Anita Putri Azzahra"}\n` +
+`┃  ${pretty("Author")}  : ${botConfig.bot?.developer || "colpad"}\n` +
 `┃  ${pretty("Versi")}   : ${botConfig.bot?.version || "-"}\n` +
 `┃  ${pretty("Uptime")}  : ${runtime}\n` +
 `┗━━━━━━━━━━━━━━━━━━┛\n` +
@@ -179,10 +179,20 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 `│ ✦ Setiap kategori langsung membuka ${pretty(".menucat")} .\n` +
 `╰──────────────────╯`;
 
-  const media = await prepareWAMessageMedia({
-    video: { url: video },
-    gifPlayback: true,
-  }, { upload: sock.waUploadToServer });
+  let media;
+  try {
+    media = await prepareWAMessageMedia({
+      video: { url: video },
+      gifPlayback: true,
+    }, { upload: sock.waUploadToServer });
+  } catch (err) {
+    console.warn("Menu video fallback triggered:", err?.message || err);
+    const quickCats = categories.slice(0, 8).map(({ cat, emoji }) => `${emoji} ${prefix}menucat ${cat}`).join("\n");
+    await sock.sendMessage(m.chat, {
+      text: `${bodyText}\n\n📌 Menu utama siap dipakai. Coba perintah berikut:\n${quickCats}`,
+    }, { quoted: m });
+    return;
+  }
 
   const newsletterId = botConfig.saluran?.id || "120363380765405182@newsletter";
   const newsletterName = botConfig.saluran?.name || botConfig.bot?.name || "Yalena Bot";

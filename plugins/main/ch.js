@@ -28,7 +28,7 @@ Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 import fs from 'fs';
 import path from 'path';
-export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
+export const FEATURE_CREDIT = "Fitur By: colpad\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 const pluginConfig = {
     name: 'ch',
     category: 'main',

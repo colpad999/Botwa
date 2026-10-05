@@ -1,8 +1,10 @@
 {
-  "commandsExecuted": 6,
-  "command_ping": 1,
-  "command_menu": 2,
-  "command_s": 1,
+  "commandsExecuted": 13,
+  "command_ping": 2,
+  "command_menu": 4,
+  "command_s": 3,
   "command_allmenu": 1,
-  "command_rules": 1
+  "command_rules": 1,
+  "command_self": 1,
+  "command_owner": 1
 }
