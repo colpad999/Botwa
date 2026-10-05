@@ -1,1 +1,54 @@
-[]
+{
+  "120363417976917810@g.us": {
+    "chatStats": {
+      "6285194593615@s.whatsapp.net": {
+        "count": 10,
+        "lastChat": 1791214756827,
+        "name": "🚣"
+      },
+      "62882010033188@s.whatsapp.net": {
+        "count": 4,
+        "lastChat": 1791214692840,
+        "name": "panggil saja ell"
+      },
+      "6285646326455@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1791214674413,
+        "name": "Rahmad Nove Aji Santoso"
+      }
+    },
+    "jid": "120363417976917810@g.us",
+    "name": "MeteorsQ dqri Sehlatan 🫈",
+    "welcome": false,
+    "leave": false,
+    "goodbye": false,
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363425310782125@g.us": {
+    "chatStats": {
+      "6283849458552@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1791214691851,
+        "name": "."
+      }
+    },
+    "jid": "120363425310782125@g.us",
+    "name": "★ TAG SW GLOBAL 3 ★",
+    "welcome": false,
+    "leave": false,
+    "goodbye": false,
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  }
+}

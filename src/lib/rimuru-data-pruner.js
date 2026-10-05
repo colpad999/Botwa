@@ -27,6 +27,8 @@ Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 */
 
 import { logger } from './rimuru-logger.js'
+import { getDatabase } from './rimuru-database.js'
+
 const INACTIVE_THRESHOLD = 14 * 24 * 60 * 60 * 1000
 const PRUNE_INTERVAL = 6 * 60 * 60 * 1000
 

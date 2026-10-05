@@ -24,8 +24,8 @@
   "onlyAdmin": false,
   "selfAdmin": false,
   "publicAdmin": false,
-  "_lastEnergiDefault": 99999,
-  "_lastEnergiPremium": 99999999,
+  "_lastEnergiDefault": 150,
+  "_lastEnergiPremium": 300,
   "lastLimitReset": "2026-08-04T17:00:00.043Z",
   "onlyThisGroup": null,
   "autoJpm": {
@@ -63,7 +63,24 @@
   "ownerNames": {},
   "publicGroups": [],
   "autoRead": false,
-  "contacts": {},
+  "contacts": {
+    "6285194593615@s.whatsapp.net": {
+      "jid": "6285194593615@s.whatsapp.net",
+      "name": "🚣"
+    },
+    "62882010033188@s.whatsapp.net": {
+      "jid": "62882010033188@s.whatsapp.net",
+      "name": "panggil saja ell"
+    },
+    "6285646326455@s.whatsapp.net": {
+      "jid": "6285646326455@s.whatsapp.net",
+      "name": "Rahmad Nove Aji Santoso"
+    },
+    "6283849458552@s.whatsapp.net": {
+      "jid": "6283849458552@s.whatsapp.net",
+      "name": "."
+    }
+  },
   "notiflimit": false,
   "pgTopups": {},
   "pgPayments": {},

@@ -42,7 +42,7 @@ const config = {
   },
 
   session: {
-    pairingNumber: "6285136541090", // Nomor WA yang akan di-pair, ini penting
+    pairingNumber: "6285126541090", // Nomor WA yang akan di-pair, ini penting
     usePairingCode: true, // true = Pairing Code, false = QR Code
   },
 
@@ -85,7 +85,7 @@ const config = {
     "riooxdzz": "https://files.catbox.moe/tvgwvn.png",
   },
 
-  mode: "public",
+  mode: "self",
 
   // Untuk mengganti prefix
   command: {

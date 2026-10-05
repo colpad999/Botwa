@@ -1,1 +1,8 @@
-{}
+{
+  "commandsExecuted": 6,
+  "command_ping": 1,
+  "command_menu": 2,
+  "command_s": 1,
+  "command_allmenu": 1,
+  "command_rules": 1
+}
