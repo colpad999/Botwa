@@ -137,10 +137,18 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
     return m.reply("❌ Video menu tidak ditemukan di assets.");
   }
 
-  const thumbnail = await sharp(getAssetBuffer("rimuru", botConfig.assets))
-    .resize(300, 300)
-    .jpeg({ quality: 80 })
-    .toBuffer();
+  let thumbnail = null;
+  const rimuruAsset = getAssetBuffer("rimuru", botConfig.assets);
+  if (Buffer.isBuffer(rimuruAsset) && rimuruAsset.length > 0) {
+    try {
+      thumbnail = await sharp(rimuruAsset)
+        .resize(300, 300)
+        .jpeg({ quality: 80 })
+        .toBuffer();
+    } catch {
+      thumbnail = null;
+    }
+  }
 
   const categoryRows = categories.map(({ cat, emoji, count }) => ({
     title: `${emoji} ${pretty(cat.toUpperCase())}`,
@@ -178,6 +186,21 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 
   const newsletterId = botConfig.saluran?.id || "120363380765405182@newsletter";
   const newsletterName = botConfig.saluran?.name || botConfig.bot?.name || "Yalena Bot";
+
+  const messageOptions = {};
+  if (thumbnail) {
+    messageOptions.quoted = {
+      key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: m.sender },
+      message: {
+        locationMessage: {
+          degreesLatitude: 0,
+          degreesLongitude: 0,
+          name: `${botConfig.bot?.name || "Yalena Bot"} • ${pretty("V5 — LV 2")}`,
+          jpegThumbnail: thumbnail,
+        },
+      },
+    };
+  }
 
   const message = generateWAMessageFromContent(m.chat, {
     viewOnceMessage: {
@@ -235,17 +258,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
       },
     },
   }, {
-    quoted: {
-      key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: m.sender },
-      message: {
-        locationMessage: {
-          degreesLatitude: 0,
-          degreesLongitude: 0,
-          name: `${botConfig.bot?.name || "Yalena Bot"} • ${pretty("V5 — LV 2")}`,
-          jpegThumbnail: thumbnail,
-        },
-      },
-    },
+    ...messageOptions,
     userJid: sock.user.jid,
   });
 
