@@ -4,7 +4,7 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
@@ -16,7 +16,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -26,7 +26,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
                  「 👑 𝑹𝑰𝑴𝑼𝑹𝑼 𝑴𝑫 👑 」
 */
 
-export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Rimuru MD 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P";
+export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 
 
 import axios from 'axios'
@@ -284,7 +284,7 @@ const fstik = {
 const pluginConfig = {
   name: "stickerinfo",
   category: "sticker",
-  description: "Imported from Rimuru MD V4.6",
+  description: "Imported from Yalena Bot V4.6",
   usage: "",
   example: "",
   isOwner: false,

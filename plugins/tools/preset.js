@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -70,7 +70,7 @@ function buildText(vt, l916, l11, xml) {
 
 ─────
 
-#prstrimuru  
+#prstYalena 
 #rimuruwangyy  
 
 ⌘ search : gm_zero_12
@@ -99,7 +99,7 @@ async function handler(m, { sock }) {
     // 💗 LOADING MESSAGE
     await sock.sendMessage(m.chat, {
         image: await loadImageBuffer(imgUrl),
-        caption: `💗 *Rimuru lagi nyusun preset kamu...* 😈
+        caption: `💗 *Yalenalagi nyusun preset kamu...* 😈
 
 Tunggu bentar ya darling~`
     }, { quoted: m })
@@ -121,7 +121,7 @@ Tunggu bentar ya darling~`
     await sock.sendMessage(m.chat, {
         image: await loadImageBuffer(imgUrl),
         caption: finalText,
-        footer: 'Rimuru AI 💗',
+        footer: 'YalenaAI 💗',
         interactiveButtons: buttons
     }, { quoted: m })
 }

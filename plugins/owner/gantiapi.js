@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -46,7 +46,7 @@ async function handler(m) {
 
     if (args.length < 2) {
         return m.reply(
-`╭━━〔 💗 RIMURU API SYSTEM 💗 〕━━⬣
+`╭━━〔 💗 YalenaAPI SYSTEM 💗 〕━━⬣
 ┃
 ┃ Darling, formatnya salah 😖
 ┃
@@ -63,7 +63,7 @@ async function handler(m) {
 
     if (!fs.existsSync(pluginPath)) {
         return m.reply(
-`╭━━〔 ❌ RIMURU SYSTEM 〕━━⬣
+`╭━━〔 ❌ YalenaSYSTEM 〕━━⬣
 ┃ Plugin *${pluginName}* tidak ditemukan
 ╰━━━━━━━━━━━━━━━━⬣`)
     }
@@ -76,7 +76,7 @@ async function handler(m) {
 
         if (!apiRegex.test(file)) {
             return m.reply(
-`╭━━〔 ⚠️ RIMURU SYSTEM 〕━━⬣
+`╭━━〔 ⚠️ YalenaSYSTEM 〕━━⬣
 ┃ API tidak ditemukan di plugin
 ┃ *${pluginName}*
 ╰━━━━━━━━━━━━━━━━⬣`)
@@ -87,7 +87,7 @@ async function handler(m) {
         fs.writeFileSync(pluginPath, file)
 
         await m.reply(
-`╭━━〔 💗 RIMURU API UPDATED 💗 〕━━⬣
+`╭━━〔 💗 YalenaAPI UPDATED 💗 〕━━⬣
 ┃
 ┃ Plugin : *${pluginName}*
 ┃ API baru : *${newApi}*
@@ -101,7 +101,7 @@ async function handler(m) {
     } catch (err) {
 
         m.reply(
-`╭━━〔 ❌ RIMURU ERROR 〕━━⬣
+`╭━━〔 ❌ YalenaERROR 〕━━⬣
 ┃ ${err.message}
 ╰━━━━━━━━━━━━━━━━⬣`)
     }

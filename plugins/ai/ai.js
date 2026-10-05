@@ -4,7 +4,7 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
@@ -16,7 +16,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -47,7 +47,7 @@ const pluginConfig = {
 
 const sessions = {};
 
-const systemPrompt = `Kamu adalah asisten AI yang cerdas dan canggih (Rimuru AI).
+const systemPrompt = `Kamu adalah asisten AI yang cerdas dan canggih (YalenaAI).
 Gunakan format markdown secara ketat:
 1. Jika membuat daftar perbandingan atau sekumpulan data, SELALU gunakan format tabel markdown (diawali dan diakhiri dengan '|').
 2. Jika memberikan kode pemrograman, SELALU bungkus dengan markdown code block (\`\`\`bahasa ... \`\`\`).

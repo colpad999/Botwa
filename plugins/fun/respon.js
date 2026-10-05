@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -30,13 +30,13 @@ const pluginConfig = {
     name: "autorimuru",
     category: "fun",
     description: "Auto respon jika ada yang menyebut Rimuru",
-    usage: ".autorimuru on/off",
-    example: ".autorimuru on",
+    usage: ".autoYalenaon/off",
+    example: ".autoYalenaon",
     cooldown: 3
 }
 
 // global agar tidak reset saat hot reload
-if (!global.autoRimuru) global.autoRimuru = false
+if (!global.autoRimuru) global.autoYalena= false
 
 async function handler(m) {
 
@@ -45,13 +45,13 @@ async function handler(m) {
 
     if (!args) {
         return m.reply(
-`╭─〔 ❤️ RIMURU AUTO RESPON 〕
+`╭─〔 ❤️ YalenaAUTO RESPON 〕
 │
 │ 📌 Perintah:
-│ • .autorimuru on
-│ • .autorimuru off
+│ • .autoYalenaon
+│ • .autoYalenaoff
 │
-│ Rimuru akan otomatis
+│ Yalenaakan otomatis
 │ merespon jika namanya disebut.
 │
 ╰────────────`
@@ -59,10 +59,10 @@ async function handler(m) {
     }
 
     if (args === "on") {
-        global.autoRimuru = true
+        global.autoYalena= true
 
         return m.reply(
-`╭─〔 ❤️ RIMURU 〕
+`╭─〔 ❤️ Yalena〕
 │
 │ Ara ara~
 │ Auto respon sekarang *AKTIF*
@@ -75,10 +75,10 @@ async function handler(m) {
     }
 
     if (args === "off") {
-        global.autoRimuru = false
+        global.autoYalena= false
 
         return m.reply(
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Hmph!
 │ Auto respon dimatikan.
@@ -104,16 +104,16 @@ async function before(m, { sock }) {
         "02",
         "rimuru",
         "zero2",
-        "Rimuru ai",
-        "rimuru ai",
+        "Yalenaai",
+        "Yalenaai",
         "bot Rimuru",
-        "Rimuru bot",
+        "Yalenabot",
         "02 ai",
         "darling Rimuru",
         "rimuruoo",
         "Rimuruoo",
         "02 darling",
-        "rimuru chan",
+        "Yalenachan",
         "rimuru-chan"
 
     ]
@@ -124,17 +124,17 @@ async function before(m, { sock }) {
 
     const respon = [
 
-`╭─〔 ❤️ RIMURU 〕
+`╭─〔 ❤️ Yalena〕
 │
 │ Ara ara~
 │ ${name} memanggilku?
 │
 │ Ada yang bisa
-│ Rimuru bantu?
+│ Yalenabantu?
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Fufu~
 │ Aku mendengar
@@ -144,7 +144,7 @@ async function before(m, { sock }) {
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Eh?
 │ ${name} kangen aku ya?
@@ -153,7 +153,7 @@ async function before(m, { sock }) {
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Ara ara~
 │ Jangan panggil aku
@@ -164,7 +164,7 @@ async function before(m, { sock }) {
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Hmph!
 │ Siapa yang memanggil
@@ -174,7 +174,7 @@ async function before(m, { sock }) {
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Darling ${name}~
 │ Kamu memanggilku?
@@ -183,7 +183,7 @@ async function before(m, { sock }) {
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Fufu~
 │ Aku merasa
@@ -193,7 +193,7 @@ async function before(m, { sock }) {
 │
 ╰────────────`,
 
-`╭─〔 RIMURU 〕
+`╭─〔 Yalena〕
 │
 │ Eh ${name}!
 │ Kamu memanggil

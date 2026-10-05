@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -278,7 +278,7 @@ async function setupAntiPMListener(sock) {
                 }
                 
                 await sock.sendMessage(sender, {
-                    text: `🦋 *RIMURU SAYS* 🦋\n\n` +
+                    text: `🦋 *YalenaSAYS* 🦋\n\n` +
                           `"Heh! ${senderNumber} jangan chat aku dong~ 🗿\n\n` +
                           `Aku lagi *ANTI PM MODE* nih!\n` +
                           `Cuma ${allowedNumbers.length} orang yang bisa chat ke aku!\n` +
@@ -297,7 +297,7 @@ async function setupAntiPMListener(sock) {
                 pmViolations.set(sender, violation)
                 
                 await sock.sendMessage(sender, {
-                    text: `🚨 *RIMURU - PERINGATAN TERAKHIR* 🚨\n\n` +
+                    text: `🚨 *Yalena- PERINGATAN TERAKHIR* 🚨\n\n` +
                           `"${senderNumber}! GW BILANG JANGAN CHAT!! 🗿\n\n` +
                           `Ini udah *PERINGATAN KE-2*!\n` +
                           `SEKALI LAGI lo chat, nomormu bakal gw *BLOKIR ASLI*!\n\n` +
@@ -312,7 +312,7 @@ async function setupAntiPMListener(sock) {
                 pmViolations.set(sender, violation)
                 
                 await sock.sendMessage(sender, {
-                    text: `💀 *RIMURU - KAMU DIBLOKIR ASLI!* 💀\n\n` +
+                    text: `💀 *Yalena- KAMU DIBLOKIR ASLI!* 💀\n\n` +
                           `"SUDAH GW BILANG JANGAN CHAT!! 🗿\n\n` +
                           `Kamu udah chat *${violation.count} kali* padahal udah aku peringatin 2x!\n` +
                           `Cuma ${allowedNumbers.length} nomor yang boleh chat ke aku, dan kamu BUKAN salah satunya!\n\n` +

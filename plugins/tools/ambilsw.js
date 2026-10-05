@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -40,7 +40,7 @@ async function handler(m, { sock }) {
 
     if (!m.quoted) {
         return m.reply(
-`╭━━〔 💖 RIMURU SW STEALER 〕━━⬣
+`╭━━〔 💖 YalenaSW STEALER 〕━━⬣
 ┃
 ┃ Ehh darling 😳
 ┃ reply status yang mention grup dulu yaa~
@@ -72,7 +72,7 @@ async function handler(m, { sock }) {
 
         if (!isStatus || !isMentionGroup) {
             return m.reply(
-`╭━━〔 ❌ RIMURU NOTICE 〕━━⬣
+`╭━━〔 ❌ YalenaNOTICE 〕━━⬣
 ┃
 ┃ Ihh ini bukan SW yang mention grup 😤
 ┃ jangan asal colong yaa darling 😳
@@ -91,7 +91,7 @@ async function handler(m, { sock }) {
             await sock.sendMessage(m.chat, {
                 image: media,
                 caption:
-`╭━━〔 💖 RIMURU RESULT 〕━━⬣
+`╭━━〔 💖 YalenaRESULT 〕━━⬣
 ┃
 ┃ 🖼️ SW berhasil aku ambil 🤭
 ┃ khusus buat kamu darling 😳
@@ -109,7 +109,7 @@ async function handler(m, { sock }) {
             await sock.sendMessage(m.chat, {
                 video: media,
                 caption:
-`╭━━〔 💖 RIMURU RESULT 〕━━⬣
+`╭━━〔 💖 YalenaRESULT 〕━━⬣
 ┃
 ┃ 🎬 Nih SW nya darling 😋
 ┃ jangan disebar yaa 🤫
@@ -127,7 +127,7 @@ async function handler(m, { sock }) {
             'Tidak ada isi'
 
         await m.reply(
-`╭━━〔 💖 RIMURU TEXT 〕━━⬣
+`╭━━〔 💖 YalenaTEXT 〕━━⬣
 ┃
 ┃ 📄 Isi SW nya nih 😋
 ┃
@@ -141,7 +141,7 @@ async function handler(m, { sock }) {
         console.log(e)
 
         m.reply(
-`╭━━〔 ❌ RIMURU ERROR 〕━━⬣
+`╭━━〔 ❌ YalenaERROR 〕━━⬣
 ┃
 ┃ Ihh gagal ambil SW 😭
 ┃ coba lagi yaa darling 😳

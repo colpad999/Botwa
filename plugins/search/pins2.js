@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -32,7 +32,7 @@ import axios from 'axios';
 import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
-export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Rimuru MD 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P";
+export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 const pluginConfig = {
     name: 'pins2',
     category: 'search',
@@ -131,7 +131,7 @@ async function handler(m, { sock, config: botConfig }) {
                         text: cardBody
                     }),
                     footer: proto.Message.InteractiveMessage.Footer.create({
-                        text: `✨ Rimuru Pinterest • Swipe kiri/kanan untuk lihat semua ✨`
+                        text: `✨ YalenaPinterest • Swipe kiri/kanan untuk lihat semua ✨`
                     }),
                     nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
                         buttons: [{
@@ -158,7 +158,7 @@ async function handler(m, { sock, config: botConfig }) {
         }
         
         const headerText = 
-`╭━━━〔 💗 RIMURU PINTEREST CAROUSEL 💗 〕━━━⬣
+`╭━━━〔 💗 YalenaPINTEREST CAROUSEL 💗 〕━━━⬣
 ┃
 ┃ 🔎 *Query:* ${query}
 ┃ 🖼️ *Total:* ${carouselCards.length} gambar
@@ -181,7 +181,7 @@ async function handler(m, { sock, config: botConfig }) {
                             text: headerText
                         }),
                         footer: proto.Message.InteractiveMessage.Footer.fromObject({
-                            text: `✨ Rimuru Pinterest | “Nikmati gambarnya, Darling~” ✨`
+                            text: `✨ YalenaPinterest | “Nikmati gambarnya, Darling~” ✨`
                         }),
                         carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
                             cards: carouselCards
@@ -203,7 +203,7 @@ async function handler(m, { sock, config: botConfig }) {
         console.error('[Pins] Error:', err.message)
         m.react('❌')
         m.reply(
-`╭━━━〔 ❌ RIMURU ERROR ❌ 〕━━━⬣
+`╭━━━〔 ❌ YalenaERROR ❌ 〕━━━⬣
 ┃
 ┃ *Error:* ${err.message}
 ┃

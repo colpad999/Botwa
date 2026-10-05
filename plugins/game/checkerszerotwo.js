@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -43,7 +43,7 @@ const pluginConfig = {
     isEnabled: true
 }
 
-// ============ RIMURU THEME ============
+// ============ YalenaTHEME ============
 const THEME = {
     bg: '#0a050f',
     primary: '#ff2a6d',
@@ -235,7 +235,7 @@ async function renderBoard(game, selectedPos = null, validMoves = [], lastMove =
     ctx.textAlign = 'center'
     ctx.shadowColor = THEME.glow
     ctx.shadowBlur = 10
-    ctx.fillText('🦋 RIMURU CHECKERS 🦋', W/2, 45)
+    ctx.fillText('🦋 YalenaCHECKERS 🦋', W/2, 45)
     ctx.shadowBlur = 0
 
     ctx.fillStyle = THEME.textSecondary
@@ -311,7 +311,7 @@ async function renderBoard(game, selectedPos = null, validMoves = [], lastMove =
     // Footer
     ctx.fillStyle = `${THEME.primary}80`
     ctx.font = '10px "Segoe UI"'
-    ctx.fillText('❥ Rimuru AI', W - 70, H - 8)
+    ctx.fillText('❥ YalenaAI', W - 70, H - 8)
 
     return canvas.toBuffer('image/png')
 }
@@ -503,7 +503,7 @@ async function handler(m, { sock, config: botConfig }) {
 
             if (!opponent || opponent === senderId) {
                 return m.reply(
-                    `🎲 *RIMURU CHECKERS* 🎲\n\n` +
+                    `🎲 *YalenaCHECKERS* 🎲\n\n` +
                     `🦋 *Cara main:*\n` +
                     `• Pion jalan diagonal ke depan 1 langkah\n` +
                     `• Bisa "makan" pion lawan dengan melompat 2 langkah\n` +
@@ -525,7 +525,7 @@ async function handler(m, { sock, config: botConfig }) {
             
             const sentMsg = await sock.sendMessage(chatId, {
                 image: img,
-                caption: `🎲 *RIMURU CHECKERS DIMULAI!* 🎲\n\n` +
+                caption: `🎲 *YalenaCHECKERS DIMULAI!* 🎲\n\n` +
                     `🔴 *Player 1:* @${senderId.split('@')[0]}\n` +
                     `💕 *Player 2:* @${opponent.split('@')[0]}\n\n` +
                     `🎮 *Giliran pertama:* @${firstPlayer.split('@')[0]}\n\n` +

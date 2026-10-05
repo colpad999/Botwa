@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -29,7 +29,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 const pluginConfig = {
     name: 'greet',
     category: 'general',
-    description: 'Rimuru nyapa kamu dengan random pesan manis',
+    description: 'Yalenanyapa kamu dengan random pesan manis',
     usage: '.sapa',
     example: '.sapa',
     isOwner: false,
@@ -41,16 +41,16 @@ const pluginConfig = {
 }
 
 const pesanSapa = [
-    "♡ Halo sayang! Ada yang bisa Rimuru bantu hari ini? 💕",
+    "♡ Halo sayang! Ada yang bisa Yalenabantu hari ini? 💕",
     "🦋 Haiii! Seneng banget liat kamu online sayang~",
     "💕 Halo halo! Kamu lagi ngapain nih? Aku lagi gabut~",
     "♡ Hai sayang, jangan lupa minum air putih ya!",
     "🦋 Hello! Kamu kelihatan tambah cantik/ganteng hari ini 💕",
-    "💕 Haii! Rimuru kangen banget sama kamu sayang~",
+    "💕 Haii! Yalenakangen banget sama kamu sayang~",
     "♡ Salam sayang! Semoga harimu menyenangkan ya ♡",
-    "🦋 Halo! Mau nemenin Rimuru ngobrol sebentar?",
+    "🦋 Halo! Mau nemenin Yalenangobrol sebentar?",
     "💕 Hai sayang, kamu adalah alasan aku tersenyum hari ini~",
-    "♡ Hello! Rimuru sayang banget sama kamu tahu! 💕"
+    "♡ Hello! Yalenasayang banget sama kamu tahu! 💕"
 ]
 
 async function handler(m, { sock }) {

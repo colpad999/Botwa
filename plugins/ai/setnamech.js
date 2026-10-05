@@ -4,7 +4,7 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
@@ -16,7 +16,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -47,7 +47,7 @@ async function handler(m, { sock }) {
     if (cmd === "followch") {
       const id = String(m.args?.[0] || "").trim();
       if (!id) return m.reply(`Contoh: ${m.prefix}followch CHANNEL_ID`);
-      if (typeof sock.newsletterFollow !== "function") return m.reply("❌ Baileys Rimuru tidak menyediakan newsletterFollow.");
+      if (typeof sock.newsletterFollow !== "function") return m.reply("❌ Baileys Yalenatidak menyediakan newsletterFollow.");
       await sock.newsletterFollow(id.includes("@newsletter") ? id : `${id}@newsletter`);
       return m.reply(`✅ Berhasil follow channel ${id}`);
     }
@@ -55,7 +55,7 @@ async function handler(m, { sock }) {
     if (cmd === "unfollowch") {
       const id = String(m.args?.[0] || "").trim();
       if (!id) return m.reply(`Contoh: ${m.prefix}unfollowch CHANNEL_ID`);
-      if (typeof sock.newsletterUnfollow !== "function") return m.reply("❌ Baileys Rimuru tidak menyediakan newsletterUnfollow.");
+      if (typeof sock.newsletterUnfollow !== "function") return m.reply("❌ Baileys Yalenatidak menyediakan newsletterUnfollow.");
       await sock.newsletterUnfollow(id.includes("@newsletter") ? id : `${id}@newsletter`);
       return m.reply(`✅ Berhasil unfollow channel ${id}`);
     }
@@ -69,7 +69,7 @@ async function handler(m, { sock }) {
       channel ||= m.chat?.endsWith("@newsletter") ? m.chat : null;
       if (!channel && sock.newsletterMetadata) channel = (await sock.newsletterMetadata("jid", m.chat))?.id;
       if (!channel) return m.reply("Masukkan ID/JID channel dengan format `channelJid|Nama Baru`.");
-      if (typeof sock.newsletterUpdateName !== "function") return m.reply("❌ Baileys Rimuru tidak menyediakan newsletterUpdateName.");
+      if (typeof sock.newsletterUpdateName !== "function") return m.reply("❌ Baileys Yalenatidak menyediakan newsletterUpdateName.");
       await sock.newsletterUpdateName(channel, name);
       return m.reply(`✅ Nama channel berhasil diubah menjadi ${name}`);
     }

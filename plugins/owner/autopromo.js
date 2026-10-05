@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -40,7 +40,7 @@ const pluginConfig = {
     isOwner: true
 };
 
-const CHANNEL_URL = config.saluran?.link || 'https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P';
+const CHANNEL_URL = config.saluran?.link || 'https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y';
 const IMAGE_PATH = config.assets?.rimuru2;
 
 const blacklist = []; // Bisa ditambah ID grup yang gak mau dipromosi
@@ -187,7 +187,7 @@ async function sendPromo(sock, isTest = false) {
 `╭━━━〔 💌 HEY DARLING 〕━━━⬣
 ┃ Hai kamu yang lagi scroll 👀
 ┃
-┃ Join saluran Rimuru yuk 💕
+┃ Join saluran Yalenayuk 💕
 ┃ biar selalu dapet update terbaru
 ┃
 ┃ ✦ Info bot tiap hari
@@ -231,7 +231,7 @@ async function sendPromo(sock, isTest = false) {
             // Opsi 1: Pakai sendMessage biasa dengan buttons (lebih universal)
             await sock.sendMessage(groupId, {
                 image: { url: imageUrl },
-                caption: caption + '\n\n© RIMURU AI',
+                caption: caption + '\n\n© YalenaAI',
                 buttons: [
                     { buttonId: '.menu', buttonText: { displayText: '📋 Menu Bot' }, type: 1 },
                     { buttonId: '.owner', buttonText: { displayText: '👑 Owner Bot' }, type: 1 },
@@ -250,7 +250,7 @@ async function sendPromo(sock, isTest = false) {
             try {
                 await sock.sendMessage(groupId, {
                     image: { url: imageUrl },
-                    caption: caption + '\n\n© RIMURU AI\n\n📢 Join: ' + CHANNEL_URL
+                    caption: caption + '\n\n© YalenaAI\n\n📢 Join: ' + CHANNEL_URL
                 });
                 console.log(`[AUTO PROMO] ✅ terkirim (no buttons) ke ${groupId}`);
                 successCount++;

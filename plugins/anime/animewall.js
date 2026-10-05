@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -152,7 +152,7 @@ async function renderInfoCard(query, wallpaper) {
     ctx.textAlign = 'center'
     ctx.shadowColor = THEME.glow
     ctx.shadowBlur = 10
-    ctx.fillText('🖼️ RIMURU WALLPAPER 🖼️', w/2, 45)
+    ctx.fillText('🖼️ YalenaWALLPAPER 🖼️', w/2, 45)
     ctx.shadowBlur = 0
 
     ctx.fillStyle = THEME.cardBg || '#1a0b1a'
@@ -187,7 +187,7 @@ async function renderInfoCard(query, wallpaper) {
 
     ctx.fillStyle = `${THEME.primary}80`
     ctx.font = '9px "Segoe UI"'
-    ctx.fillText('❥ Rimuru AI | Anime Wallpaper', w/2, h - 18)
+    ctx.fillText('❥ YalenaAI | Anime Wallpaper', w/2, h - 18)
 
     return canvas.toBuffer('image/png')
 }
@@ -208,7 +208,7 @@ function roundRect(ctx, x, y, w, h, r) {
 }
 
 function formatCaption(query, wallpaper) {
-    let caption = `🖼️ *RIMURU WALLPAPER* 🖼️\n\n`
+    let caption = `🖼️ *YalenaWALLPAPER* 🖼️\n\n`
     
     if (query) {
         caption += `📺 *Request:* ${query.toUpperCase()}\n`

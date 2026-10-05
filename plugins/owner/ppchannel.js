@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -47,7 +47,7 @@ async function handler(m,{ sock }){
 
     const quoted = m.quoted
     if(!quoted) return m.reply(
-`╭━━〔 *❤️ RIMURU SET PP CHANNEL* 〕━━⬣
+`╭━━〔 *❤️ YalenaSET PP CHANNEL* 〕━━⬣
 ┃ Reply gambar dengan command ini
 ┃ lalu kirim *.setppsaluran*
 ╰━━━━━━━━━━━━━━━━⬣`
@@ -61,7 +61,7 @@ async function handler(m,{ sock }){
     }
 
     if(!imageBuffer) return m.reply(
-`╭━━〔 *❌ RIMURU SET PP CHANNEL* 〕━━⬣
+`╭━━〔 *❌ YalenaSET PP CHANNEL* 〕━━⬣
 ┃ ❌ Pesan yang direply bukan gambar
 ╰━━━━━━━━━━━━━━━━⬣`
     )
@@ -81,7 +81,7 @@ async function handler(m,{ sock }){
         // Kirim info ke channel (UI Rimuru)
         const time = new Date().toLocaleTimeString()
         const infoMsg =
-`╭─〔 💖 RIMURU CHANNEL UPDATE 💖 〕
+`╭─〔 💖 YalenaCHANNEL UPDATE 💖 〕
 │
 │ Darling, ada PP baru nih 😋
 │
@@ -99,7 +99,7 @@ async function handler(m,{ sock }){
         // Feedback ke user
         m.react("✅")
         return m.reply(
-`╭━━〔 *❤️ RIMURU SYSTEM* 〕━━⬣
+`╭━━〔 *❤️ YalenaSYSTEM* 〕━━⬣
 ┃ ✅ PP Channel berhasil diupdate!
 ┃ Darling, channel sudah dikasih info 😋
 ╰━━━━━━━━━━━━━━━━⬣`
@@ -109,7 +109,7 @@ async function handler(m,{ sock }){
         console.log(e)
         m.react("❌")
         return m.reply(
-`╭━━〔 *❌ RIMURU SYSTEM* 〕━━⬣
+`╭━━〔 *❌ YalenaSYSTEM* 〕━━⬣
 ┃ ${e.message}
 ╰━━━━━━━━━━━━━━━━⬣`
         )

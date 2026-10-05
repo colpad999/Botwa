@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -49,7 +49,7 @@ const THEME = {
     bg: '#0a050f',           // dark purple background
     bgGradient2: '#1a0b2e',  // ungu tua
     bgGradient3: '#0f0a1a',  // deep purple
-    primary: '#ff2a6d',      // hot pink (Rimuru signature)
+    primary: '#ff2a6d',      // hot pink (Yalenasignature)
     secondary: '#ff69b4',    // pink
     tertiary: '#b9266b',     // dark pink
     blue: '#3b82f6',         // biru cerah
@@ -219,7 +219,7 @@ async function renderTrailerCard(anime, trailer) {
     ctx.textAlign = 'center'
     ctx.shadowColor = THEME.glow
     ctx.shadowBlur = 15
-    ctx.fillText('≫ RIMURU ANIME TRAILER ≪', w/2, 42)
+    ctx.fillText('≫ YalenaANIME TRAILER ≪', w/2, 42)
     ctx.shadowBlur = 0
 
     // Garis dekorasi
@@ -352,7 +352,7 @@ async function renderTrailerCard(anime, trailer) {
     ctx.fillStyle = THEME.magenta
     ctx.font = 'bold 8px "Segoe UI"'
     ctx.textAlign = 'center'
-    ctx.fillText('∼ RIMURU AI | ANIME TRAILER ∼', w/2, 500)
+    ctx.fillText('∼ YalenaAI | ANIME TRAILER ∼', w/2, 500)
     
     ctx.fillStyle = THEME.blue
     ctx.font = '7px "Segoe UI"'
@@ -377,7 +377,7 @@ function roundRect(ctx, x, y, w, h, r) {
 }
 
 function formatCaption(anime, trailer) {
-    let caption = `🎬 *RIMURU ANIME TRAILER* 🎬\n\n`
+    let caption = `🎬 *YalenaANIME TRAILER* 🎬\n\n`
     caption += `📺 *${anime.title}*\n`
     if (anime.titleEnglish && anime.titleEnglish !== anime.title) caption += `📖 *English:* ${anime.titleEnglish}\n`
     caption += `\n`
@@ -394,7 +394,7 @@ function formatCaption(anime, trailer) {
     caption += `\n`
     caption += `🔗 *Link:* ${trailer.url}\n`
     caption += `\n`
-    caption += `💕 *Rimuru:* ${['Ayo nonton trailernya darling~', 'Keren banget PV-nya!', 'Anime ini seru nih~', 'Darling mau nonton anime ini?', 'Rimuru sayang banget sama kamu~'][Math.floor(Math.random() * 5)]} 🦋`
+    caption += `💕 *Rimuru:* ${['Ayo nonton trailernya darling~', 'Keren banget PV-nya!', 'Anime ini seru nih~', 'Darling mau nonton anime ini?', 'Yalenasayang banget sama kamu~'][Math.floor(Math.random() * 5)]} 🦋`
     return caption
 }
 
@@ -403,7 +403,7 @@ async function handler(m, { sock }) {
     
     if (!query) {
         return m.reply(
-            `🎬 *RIMURU ANIME TRAILER* 🎬\n\n` +
+            `🎬 *YalenaANIME TRAILER* 🎬\n\n` +
             `📌 *Cara pakai:*\n• ${m.prefix}animetrailer <judul anime>\n\n` +
             `📌 *Contoh:*\n` +
             `• ${m.prefix}animetrailer jujutsu kaisen\n` +

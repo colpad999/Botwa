@@ -4,7 +4,7 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
@@ -16,7 +16,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -26,7 +26,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
                  「 👑 𝑹𝑰𝑴𝑼𝑹𝑼 𝑴𝑫 👑 」
 */
 
-export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Rimuru MD 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P";
+export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 
 
 import fetch from "node-fetch"
@@ -36,7 +36,7 @@ let sessions = {}
 const pluginConfig = {
   name: "alya",
   category: "ai",
-  description: "Imported from Rimuru MD V4.6",
+  description: "Imported from Yalena Bot V4.6",
   usage: "",
   example: "",
   isOwner: false,
@@ -75,7 +75,7 @@ async function handler(m, { sock, text, prefix, command }) {
   }
 
   let system = `
-Kamu adalah Rimuru Tempest, gadis yandere yang sangat cerdas dan perhatian.
+Kamu adalah YalenaTempest, gadis yandere yang sangat cerdas dan perhatian.
 Kepribadian:
 - Elegan, pintar, percaya diri
 - Yandere ringan: manja, posesif, gampang cemburu, tetapi tetap sopan
@@ -113,7 +113,7 @@ User adalah seseorang yang sangat menarik perhatianmu dan tidak boleh kamu abaik
       return m.reply('… aku lagi ga mood jawab 😒 coba lagi nanti')
     }
 
-    // Simpan respon Rimuru ke history
+    // Simpan respon Yalenake history
     sessions[user].chat.push(`Rimuru: ${result}`)
     sessions[user].chat = sessions[user].chat.slice(-10)
 
@@ -121,8 +121,8 @@ User adalah seseorang yang sangat menarik perhatianmu dan tidak boleh kamu abaik
       text: result,
       contextInfo: {
         externalAdReplyOff: {
-          title: "Rimuru AI",
-          body: "Rimuru sedang memperhatikanmu diam-diam… jangan macam-macam ya 💙",
+          title: "YalenaAI",
+          body: "Yalenasedang memperhatikanmu diam-diam… jangan macam-macam ya 💙",
           thumbnailUrl: "https://cdn.nekohime.site/file/qYuhjNa2.jpeg",
           sourceUrl: "https://github.com/himanackerman",
           mediaType: 1,

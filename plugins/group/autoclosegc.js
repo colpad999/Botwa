@@ -1,7 +1,7 @@
 /**
  * ╔══════════════════════════════════════════════════════════════════════════╗
  * ║ OCGC — Otomatis Close / Open Group                                   ║
- * ║ Struktur plugin Rimuru-MD v4.5                                        ║
+ * ║ Struktur plugin Yalena-Bot v4.5                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════╝
  *
  * Penggunaan:
@@ -13,9 +13,9 @@
  * Konfigurasi tersimpan di database/ocgc.json agar tetap aktif setelah restart.
  *
  * Fitur By: Anita Putri Azzahra
- * Fitur SC Bot Rimuru MD 👑
+ * Fitur SC Bot Yalena Bot 👑
  * Tiktok: https://tiktok.com/@anita.putri.azzah1
- * Saluran Resmi: https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+ * Saluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
  */
 
 import fs from "fs";

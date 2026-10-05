@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -149,7 +149,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
   }));
 
   const bodyText =
-`${pretty("RIMURU MD")}  ✦  ${pretty("V5 — LV 2")}\n\n` +
+`${pretty("Yalena Bot")}  ✦  ${pretty("V5 — LV 2")}\n\n` +
 `${pretty(greeting)} ${m.pushName || "Kawan"} ✨\n` +
 `_${botConfig.bot?.body || "Siap membantu kebutuhan kamu di WhatsApp."}_\n\n` +
 `┏━━ ${pretty("USER INFO")} ━━┓\n` +
@@ -159,7 +159,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 `┃  ${pretty("Nomor")}  : +${senderNo}\n` +
 `┗━━━━━━━━━━━━━━━━━━┛\n\n` +
 `┏━━ ${pretty("BOT INFO")} ━━┓\n` +
-`┃  ${pretty("Bot")}     : ${botConfig.bot?.name || "Rimuru MD"}\n` +
+`┃  ${pretty("Bot")}     : ${botConfig.bot?.name || "Yalena Bot"}\n` +
 `┃  ${pretty("Author")}  : ${botConfig.bot?.developer || "Anita Putri Azzahra"}\n` +
 `┃  ${pretty("Versi")}   : ${botConfig.bot?.version || "-"}\n` +
 `┃  ${pretty("Uptime")}  : ${runtime}\n` +
@@ -177,7 +177,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
   }, { upload: sock.waUploadToServer });
 
   const newsletterId = botConfig.saluran?.id || "120363380765405182@newsletter";
-  const newsletterName = botConfig.saluran?.name || botConfig.bot?.name || "Rimuru MD";
+  const newsletterName = botConfig.saluran?.name || botConfig.bot?.name || "Yalena Bot";
 
   const message = generateWAMessageFromContent(m.chat, {
     viewOnceMessage: {
@@ -185,13 +185,13 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
         messageContextInfo: {},
         interactiveMessage: {
           header: {
-            title: `${botConfig.bot?.name || "Rimuru MD"} • V5 — LV 2`,
+            title: `${botConfig.bot?.name || "Yalena Bot"} • V5 — LV 2`,
             subtitle: "Menu utama",
             hasMediaAttachment: true,
             videoMessage: media.videoMessage,
           },
           body: { text: bodyText },
-          footer: { text: "Rimuru MD • pilih kategori untuk melihat command" },
+          footer: { text: "Yalena Bot • pilih kategori untuk melihat command" },
           contextInfo: {
             mentionedJid: [m.sender],
             isForwarded: true,
@@ -217,7 +217,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
                 buttonParamsJson: JSON.stringify({
                   title: "🌸 Pilih Menu",
                   sections: [{
-                    title: "Kategori Rimuru MD",
+                    title: "Kategori Yalena Bot",
                     rows: categoryRows,
                   }],
                 }),
@@ -241,7 +241,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
         locationMessage: {
           degreesLatitude: 0,
           degreesLongitude: 0,
-          name: `${botConfig.bot?.name || "Rimuru MD"} • ${pretty("V5 — LV 2")}`,
+          name: `${botConfig.bot?.name || "Yalena Bot"} • ${pretty("V5 — LV 2")}`,
           jpegThumbnail: thumbnail,
         },
       },

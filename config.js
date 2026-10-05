@@ -4,7 +4,7 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
@@ -16,7 +16,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -32,17 +32,17 @@ import * as ownerPremiumDb from "./src/lib/rimuru-premium-db.js";
 //  utamakan baca object config sampai bawah
 const config = {
   info: {
-    website: "https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P",
+    website: "https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y",
     grupwa: "",
   },
 
   owner: {
-    name: "Anita Putri Azzahra", // Nama owner
-    number: ["628111111111"], // Format: 628xxx (tanpa + atau 0)
+    name: "Colpad", // Nama owner
+    number: ["6285194593615"], // Format: 628xxx (tanpa + atau 0)
   },
 
   session: {
-    pairingNumber: "6281111111111", // Nomor WA yang akan di-pair, ini penting
+    pairingNumber: "6285136541090", // Nomor WA yang akan di-pair, ini penting
     usePairingCode: true, // true = Pairing Code, false = QR Code
   },
 
@@ -54,9 +54,9 @@ const config = {
   },
 
   bot: {
-    name: "Rimuru MD", // Nama bot
+    name: "Yalena Bot", // Nama bot
     version: "4.7", // Versi bot
-    developer: "Anita Putri Azzahra", // Nama developer
+    developer: "Colpad", // Nama developer
   },
 
   assets: {
@@ -143,7 +143,7 @@ const config = {
   saluran: {
     id: "120363380765405182@newsletter", // ID saluran (contoh: 120363xxx@newsletter)                          // ID saluran (contoh: 120363xxx@newsletter)
     name: "Saluran Resmi Yalena Bot", // Nama saluran
-    link: "https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P", // Link saluran
+    link: "https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y", // Link saluran
   },
 
   groupProtection: {
@@ -612,7 +612,7 @@ export default config;
 // Named compatibility exports used by merged plugins.
 // Keep the canonical config object as the single source of truth.
 const RIMURU_CORE_CONFIG = config;
-const RIMURU_DEVELOPER = config.bot?.developer || config.owner?.name || "Rimuru MD";
+const RIMURU_DEVELOPER = config.bot?.developer || config.owner?.name || "Yalena Bot";
 
 export {
   config,

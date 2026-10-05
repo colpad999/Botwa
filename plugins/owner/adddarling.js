@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -35,7 +35,7 @@ const pluginConfig = {
     category: 'owner',
     description: 'Tambah karakter ke database gacha darling',
     usage: '.add-gacha Nama Karakter | https://url.mp4',
-    example: '.add-gacha Rimuru | https://example.com/video.mp4',
+    example: '.add-gacha Yalena| https://example.com/video.mp4',
     isOwner: true,
     isPremium: false,
     isGroup: false,
@@ -114,10 +114,10 @@ async function handler(m, { sock, args, prefix, command }) {
             `> Gunakan format:\n` +
             `> \`${prefix}add-gacha Nama Karakter | https://url-video.mp4\`\n\n` +
             `> Contoh:\n` +
-            `> \`${prefix}add-gacha Rimuru | https://example.com/zerotwo.mp4\`\n` +
+            `> \`${prefix}add-gacha Yalena| https://example.com/zerotwo.mp4\`\n` +
             `> \`${prefix}add-gacha Ichigo | https://cdn.com/ichigo.mp4\`\n\n` +
             `> Contoh multi URL:\n` +
-            `> \`${prefix}add-gacha Rimuru | https://url1.mp4,https://url2.mp4\``
+            `> \`${prefix}add-gacha Yalena| https://url1.mp4,https://url2.mp4\``
         );
     }
 
@@ -130,7 +130,7 @@ async function handler(m, { sock, args, prefix, command }) {
         return m.reply(
             `❌ *Nama atau URL tidak boleh kosong!*\n\n` +
             `> Format: \`Nama | URL\`\n` +
-            `> Contoh: \`Rimuru | https://example.com/video.mp4\``
+            `> Contoh: \`Yalena| https://example.com/video.mp4\``
         );
     }
 

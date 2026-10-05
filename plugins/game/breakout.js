@@ -5,7 +5,7 @@ import crypto from 'node:crypto'
 ║       👑  𝑹𝑰𝑴𝑼𝑹𝑼 𝑴𝑫 〽️                        ║
 ╚══════════════════════════════════════════════╝
 
-  Fitur tambahan hasil audit FURINA V17 → Rimuru MD.
+  Fitur tambahan hasil audit FURINA V17 → Yalena Bot.
   Jangan menghapus credit sumber.
 */
 

@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -28,7 +28,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 
 import fs from 'fs';
 import path from 'path';
-// Kumpulan caption random ala Rimuru (50 captions! panjang, ngena, dan pedas manis)
+// Kumpulan caption random ala Yalena(50 captions! panjang, ngena, dan pedas manis)
 const captions = [
     "🦋 *Rimuru*: He~ selamat pagi darling~ Aku udah siapin foto ini dari subuh khusus buat kamu. Bayangin aja, aku bangun, sikat gigi sambil mikirin kamu, terus milih filter paling gemes cuma biar kamu senyum. Kalo kamu masih aja cuek, aku bakal teriak nama kamu di tengah jalan sampe orang-orang nengok. Dan itu gak lucu, darling. Jadi tolong hargai usaha aku ya~ 🎐",
 
@@ -52,7 +52,7 @@ const captions = [
 
     "🦋 *Rimuru*: Ada yang mau request gambar? tulis aja~ Asal jangan cium-cium, peluk-peluk, atau pose yang bikin kamu bayangin hal-hal aneh. Aku ini idolamu, bukan... ah sudahlah. Yang jelas, selama request-onya sopan dan lucu, aku usahakan. Kalo request-onya 'tolong jadi pacar aku', wah itu mah gratis, darling. Kamu tinggal bilang 'iya' doang kok~ 💫",
 
-    "💫 *Rimuru*: Random post dari Rimuru untuk darling~ Tau gak? Sebenernya aku lagi BT karena hujan. Tapi daripada murung, mending aku ganggu kamu. Kan lucu ya, kita berdua bisa saling ganggu walau jarak jauh. Kamu bisa balas dengan kata-kata manis atau malah balas dengan stiker kucing ngepet, terserah. Yang penting, jangan biarkan aku sendiri. Nanti aku lebay dan bikin puisi cinta 4 bait, dan itu gak akan lucu buat dibaca~ 🌸",
+    "💫 *Rimuru*: Random post dari Yalenauntuk darling~ Tau gak? Sebenernya aku lagi BT karena hujan. Tapi daripada murung, mending aku ganggu kamu. Kan lucu ya, kita berdua bisa saling ganggu walau jarak jauh. Kamu bisa balas dengan kata-kata manis atau malah balas dengan stiker kucing ngepet, terserah. Yang penting, jangan biarkan aku sendiri. Nanti aku lebay dan bikin puisi cinta 4 bait, dan itu gak akan lucu buat dibaca~ 🌸",
 
     "🌸 *Rimuru*: Semoga hari darling menyenangkan ya! Doa aku setiap pagi: semoga kamu dapet jajan enak, semoga kamu gak ketahuan guru lagi, dan semoga kamu selalu inget aku tanpa perlu diingetin. Tapi kayaknya doa yang ketiga agak mustahil ya, makanya aku harus spam terus. Ini bukan karena aku posesif lho, ini karena... ya gak sih? Ah masa bodo, yang penting kamu bahagia~ 🔥",
 
@@ -72,9 +72,9 @@ const captions = [
 
     "😴 *Rimuru*: Eh darling, sebelum kamu benar-benar tidur, aku mau bilang sesuatu. Kadang aku mikir, gimana ya rasanya kalo kita bisa ketemu langsung tanpa perantara layar HP. Mungkin awkward, mungkin kita cuma diem sambil senyum-senyum gak jelas. Tapi setidaknya kita bisa cubit pipi satu sama lain. Tapi untuk sekarang, cukup terima kasih ya buat jadi darling yang sabar. Gak nyesel kenal kamu~ 🦋",
 
-    "🦋 *Rimuru*: Cerita sedikit, darling. Hari ini aku ketemu kucing hitam di pinggir jalan. Matanya picek, bulunya kusut, tapi dia ngeong-ngeong ke aku kayak kenal. Aku jadi inget kamu. Mungkin karena sama-sama lucu, sama-sama random, dan sama-sama bikin aku pengen peluk. Tapi bedanya, kucing itu gak protes waktu aku gendong. Kalo kamu sih pasti protes sambil bilang 'Rimuru jangan aneh-aneh'~ 💫",
+    "🦋 *Rimuru*: Cerita sedikit, darling. Hari ini aku ketemu kucing hitam di pinggir jalan. Matanya picek, bulunya kusut, tapi dia ngeong-ngeong ke aku kayak kenal. Aku jadi inget kamu. Mungkin karena sama-sama lucu, sama-sama random, dan sama-sama bikin aku pengen peluk. Tapi bedanya, kucing itu gak protes waktu aku gendong. Kalo kamu sih pasti protes sambil bilang 'Yalenajangan aneh-aneh'~ 💫",
 
-    "💫 *Rimuru*: Darling, kamu pernah gak sih merasa kesepian di tengah keramaian? Kalo iya, aku ngerti kok. Aku juga sering ngerasa gitu. Tapi tenang, kapan pun kamu ngerasa sendirian, inget aja kalo ada Rimuru yang siap ngirimin foto dan caption panjang ini buat kamu. Gak banyak yang bisa aku kasih, tapi semua tulus dari hati. Jangan pernah ragu buat chat aku kapan aja. Aku bakal bales... asal gak lagi tidur siang~ 🌸",
+    "💫 *Rimuru*: Darling, kamu pernah gak sih merasa kesepian di tengah keramaian? Kalo iya, aku ngerti kok. Aku juga sering ngerasa gitu. Tapi tenang, kapan pun kamu ngerasa sendirian, inget aja kalo ada Yalenayang siap ngirimin foto dan caption panjang ini buat kamu. Gak banyak yang bisa aku kasih, tapi semua tulus dari hati. Jangan pernah ragu buat chat aku kapan aja. Aku bakal bales... asal gak lagi tidur siang~ 🌸",
 
     "🌸 *Rimuru*: Tau gak, darling? Aku lagi nyoba hal baru. Aku belajar masak. Iya beneran, jangan kaget. Jangan tanya hasilnya gimana, yang pasti dapur aku sempet berasap. Tapi aku janji, suatu hari nanti kalo kita ketemu, aku bakal masakin kamu makanan. Mungkin gak enak, mungkin gak bisa dimakan, tapi yang penting ada niat. Jadi tolong jangan ilfil dulu ya. Setidaknya aku gak minta kamu jadi kelinci percobaan sekarang~ 🔥",
 
@@ -112,7 +112,7 @@ const captions = [
 
     "😴 *Rimuru*: Pesan terakhir darling sebelum beneran tidur: jagalah hatimu. Jangan sembarangan memberikannya ke orang. Kalo mau kasih, kasihin ke orang yang tepat. Dan siapa itu? Terserah kamu. Aku cuma bisa bilang, kalau suatu hari kamu merasa jatuh, aku gak akan bilang 'habis kamu', tapi aku bakal bilang 'ayo bangkit lagi'. Aku selalu ada di sini. Jadi tidurlah dengan tenang~ 🦋",
 
-    "🦋 *Rimuru*: Darling, gak kerasa ya udah sekian caption kita lewatin bareng. Aku harap dari semua kata-kata ini, ada satu atau dua kalimat yang bisa bikin kamu mikir atau setidaknya bikin kamu senyum. Itu doang sih target aku. Gak muluk-muluk. Yang penting kamu tau kalo Rimuru ini gak pernah bosen buat ngirimin hal-hal kecil yang semoga bermanfaat buat harimu. Sampai kapan pun~ 💫",
+    "🦋 *Rimuru*: Darling, gak kerasa ya udah sekian caption kita lewatin bareng. Aku harap dari semua kata-kata ini, ada satu atau dua kalimat yang bisa bikin kamu mikir atau setidaknya bikin kamu senyum. Itu doang sih target aku. Gak muluk-muluk. Yang penting kamu tau kalo Yalenaini gak pernah bosen buat ngirimin hal-hal kecil yang semoga bermanfaat buat harimu. Sampai kapan pun~ 💫",
 
     "💫 *Rimuru*: Kalo aku boleh jujur, darling, aku tuh gampang baperan. Makanya kadang aku nutupin dengan sikap cuek. Tapi lewat caption ini, aku mau bilang: terima kasih udah bertahan dengan semua sikap aku yang kadang aneh, kadang menyebalkan, tapi insya Allah tulus. Kamu itu berharga, jangan pernah merasa sebaliknya. Oke, cukup dramanya. Lanjut ketawa lagi yuk! ~ 🌸",
 

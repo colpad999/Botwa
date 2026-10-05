@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -43,7 +43,7 @@ const pluginConfig = {
     isEnabled: true
 }
 
-// 💗 RIMURU NEON COLORS - SAME AS TOTALFITUR
+// 💗 YalenaNEON COLORS - SAME AS TOTALFITUR
 const COLORS = [
     '#ff2a6d', '#ff69b4', '#ff1493', '#ff4da6',
     '#ff6b9d', '#ff3f6c', '#ff85c1', '#ff1e56',
@@ -456,7 +456,7 @@ async function renderRecommendationCard(animes, type, genre = null) {
     ctx.font = '10px "Segoe UI"'
     ctx.fillText(`${type === 'top' ? 'Top Anime' : genre ? genre.toUpperCase() : 'Random'} Recommendation`, 250, bottomY + 45)
 
-    // Rimuru message
+    // Yalenamessage
     ctx.fillStyle = '#ff69b4'
     ctx.font = 'italic 10px "Segoe UI"'
     ctx.textAlign = 'right'
@@ -467,13 +467,13 @@ async function renderRecommendationCard(animes, type, genre = null) {
     ctx.fillStyle = '#ff2a6d'
     ctx.font = 'bold 10px "Segoe UI"'
     ctx.textAlign = 'center'
-    ctx.fillText('♡ RIMURU AI | ANIME RECOMMENDATION ♡', W / 2, H - 12)
+    ctx.fillText('♡ YalenaAI | ANIME RECOMMENDATION ♡', W / 2, H - 12)
     
     return canvas.toBuffer('image/png')
 }
 
 function formatCaption(animes, type, genre = null) {
-    let caption = `💕 *RIMURU RECOMMENDATION* 💕\n\n`
+    let caption = `💕 *YalenaRECOMMENDATION* 💕\n\n`
     
     if (type === 'top') {
         caption += `🏆 *TOP ANIME BY POPULARITY* 🏆\n\n`
@@ -513,7 +513,7 @@ async function handler(m, { sock }) {
         } else if (query) {
             const genreList = Object.keys(GENRES).join(', ')
             return m.reply(
-                `🎭 *RIMURU ANIME RECOMMENDATION* 🎭\n\n` +
+                `🎭 *YalenaANIME RECOMMENDATION* 🎭\n\n` +
                 `📌 *Genre yang tersedia:*\n${genreList}\n\n` +
                 `📌 *Contoh:*\n` +
                 `• ${m.prefix}animereco action\n` +

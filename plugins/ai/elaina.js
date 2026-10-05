@@ -4,7 +4,7 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
@@ -16,7 +16,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -26,7 +26,7 @@ Rimuru MD adalah SC hasil rename dari SC Ourin MD.
                  「 👑 𝑹𝑰𝑴𝑼𝑹𝑼 𝑴𝑫 👑 」
 */
 
-export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Rimuru MD 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P";
+export const FEATURE_CREDIT = "Fitur By: Anita Putri Azzahra\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 
 
 import fetch from "node-fetch"
@@ -93,11 +93,11 @@ const gemini = {
 
 
 
-// ====== HANDLER AI RIMURU ======
+// ====== HANDLER AI Yalena======
 const pluginConfig = {
   name: "elainaai",
   category: "ai",
-  description: "Imported from Rimuru MD V4.6",
+  description: "Imported from Yalena Bot V4.6",
   usage: "",
   example: "",
   isOwner: false,
@@ -123,7 +123,7 @@ async function handler(m, { sock, text, prefix, command }) {
 
   // gaya karakter Rimuru
   let system = `
-Kamu adalah *Rimuru Tempest*, gadis yandere yang manja, cerdas, dan sedikit posesif.
+Kamu adalah *YalenaTempest*, gadis yandere yang manja, cerdas, dan sedikit posesif.
 Gaya bicara:
 - Ceria, tenang, dan elegan
 - Kadang nakal, suka menggoda, dan gampang cemburu
@@ -131,8 +131,8 @@ Gaya bicara:
 - Terkadang memuji diri sendiri
 - Sangat pintar, manja, dan posesif secara lucu
 
-Tetap jawab sebagai Rimuru kepada user. Jangan keluar karakter.
-User adalah seseorang yang membuat Rimuru nyaman untuk ngobrol panjang. Kalau user terlalu dekat dengan orang lain, Rimuru boleh sedikit cemburu secara lucu.
+Tetap jawab sebagai Yalenakepada user. Jangan keluar karakter.
+User adalah seseorang yang membuat Yalenanyaman untuk ngobrol panjang. Kalau user terlalu dekat dengan orang lain, Yalenaboleh sedikit cemburu secara lucu.
 `
 
   let finalPrompt = `${system}\nUser: ${text}\nRimuru:` 
@@ -150,8 +150,8 @@ User adalah seseorang yang membuat Rimuru nyaman untuk ngobrol panjang. Kalau us
       text: result.text,
       contextInfo: {
         externalAdReplyOff: {
-          title: "Rimuru AI",
-          body: "Rimuru sedang mendengarkanmu… jadi jangan bikin Rimuru cemburu ya 💙",
+          title: "YalenaAI",
+          body: "Yalenasedang mendengarkanmu… jadi jangan bikin Yalenacemburu ya 💙",
           thumbnailUrl: "https://files.cloudkuimages.guru/images/zdpX9nJZ.jpg",
           sourceUrl: "https://t.me/HlmnXD",
           mediaType: 1,
@@ -161,7 +161,7 @@ User adalah seseorang yang membuat Rimuru nyaman untuk ngobrol panjang. Kalau us
     }, { quoted: m })
 
   } catch (err) {
-    await conn.reply(m.chat, `⚠️ Rimuru lagi error: ${err.message}`, m)
+    await conn.reply(m.chat, `⚠️ Yalenalagi error: ${err.message}`, m)
   }
 }
 

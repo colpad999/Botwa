@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -209,7 +209,7 @@ async function renderCalendar(animes, season, year) {
     ctx.textAlign = 'center'
     ctx.shadowColor = THEME.glow
     ctx.shadowBlur = 10
-    ctx.fillText(`📅 RIMURU RELEASE CALENDAR 📅`, w/2, 42)
+    ctx.fillText(`📅 YalenaRELEASE CALENDAR 📅`, w/2, 42)
     ctx.shadowBlur = 0
 
     const seasonEmoji = SEASONS[season]?.emoji || '🌸'
@@ -260,14 +260,14 @@ async function renderCalendar(animes, season, year) {
 
     ctx.fillStyle = `${THEME.primary}80`
     ctx.font = '9px "Segoe UI"'
-    ctx.fillText('❥ Rimuru AI | Data from MyAnimeList (Jikan API)', w/2, h - 18)
+    ctx.fillText('❥ YalenaAI | Data from MyAnimeList (Jikan API)', w/2, h - 18)
 
     return canvas.toBuffer('image/png')
 }
 
 function formatCaption(animes, season, year) {
     const seasonData = SEASONS[season]
-    let caption = `📅 *RIMURU RELEASE CALENDAR* 📅\n\n`
+    let caption = `📅 *YalenaRELEASE CALENDAR* 📅\n\n`
     caption += `${seasonData.emoji} *${seasonData.name} ${year}* ${seasonData.emoji}\n`
     caption += `━━━━━━━━━━━━━━━━━━━━\n\n`
     

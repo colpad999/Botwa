@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -56,7 +56,7 @@ canvas{width:100%;display:block;touch-action:none}
 <div class="gw"><canvas id="cv" width="404" height="300"></canvas></div>
 <div class="pads"><button class="pd" id="boostB">⚡ BOOST</button><button class="pd" id="jumpB">⤒ JUMP</button></div>
 <div class="hint">Lompat saat garis merah LASER kedip cepat! · kena musuh = ring turun 10% saja · tiap 50 ring = BOSS! · 🔊 = sound</div>
-<div class="credit">Fitur by: Anita Putri Azzahra Anita Putri Azzahra · Saluran: <a href="https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a></div>
+<div class="credit">Fitur by: Anita Putri Azzahra Anita Putri Azzahra · Saluran: <a href="https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a></div>
 </div>
 <script>
 window.onerror=function(m,s,l){var e=document.getElementById('hint');if(e){e.textContent='⚠ '+m+' @'+l;e.style.color='#ff7a8a'}};
@@ -971,7 +971,7 @@ update();draw();requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
 })();
-\n/* RIMURU LIGHT SFX: procedural WebAudio, no external audio asset */
+\n/* YalenaLIGHT SFX: procedural WebAudio, no external audio asset */
 (function(){
   if (window.__RIMURU_LIGHT_SFX__) return;
   var ac=null, master=null, last=0;

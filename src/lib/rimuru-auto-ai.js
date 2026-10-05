@@ -4,19 +4,19 @@
 ╚══════════════════════════════════════════════╝
 
 🪽 𝑵𝒐𝒕𝒆 :
-Rimuru MD adalah SC hasil rename dari SC Ourin MD.
+Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 
 ╭─────────────「 🜲 𝑰𝑵𝑭𝑶 𝑶𝑼𝑹𝑰𝑵 」─────────────╮
 │ 👤 Developer : 𝑯𝒚𝒖𝒖 / 𝒁𝒂𝒏𝒏
 │ 🎵 TikTok    : https://tiktok.com/@ourinmd
-│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VbB37bgBfxoAmAlsgE0t
+│ 📢 WhatsApp  : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 ╰─────────────────────────────────────────────╯
 
 ╭────────────「 ✦ 𝑰𝑵𝑭𝑶 𝑹𝑰𝑴𝑼𝑹𝑼 ✦ 」────────────╮
 │ 👤 Developer Pihak Ketiga : 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
 │ 🎵 TikTok                 : https://tiktok.com/@anita.putri.azzah1
 │ 📸 Instagram              : anit_aputriazzahrah
-│ 📢 Saluran                : https://whatsapp.com/channel/0029Vb8dmsUElagkVPIw9X2P
+│ 📢 Saluran                : https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y
 │ ▶️ YouTube                : https://youtube.com/@rimurumd
 ╰─────────────────────────────────────────────╯
 
@@ -116,7 +116,7 @@ function sayHello(name) {
 }
 console.log(sayHello("User"))
 text: Ini contoh kodenya: (opsional)
-footer: Powered by Rimuru AI (opsional)
+footer: Powered by YalenaAI (opsional)
 [/RICH:CODE]
 
 Bahasa didukung: javascript (js, ts, typescript), python (py), go (golang), lua, bash (sh, shell)
@@ -134,14 +134,14 @@ PENTING: text WAJIB mengandung placeholder {{IE_0}}...{{/IE_0}} untuk setiap URL
 4. LIST (saat user minta info singkat format daftar key-value):
 [RICH:LIST]
 title: Info Bot
-rows: Nama | Rimuru AI;; Versi | 2.4.5;; Developer | Zann
-footer: © Rimuru AI (opsional)
+rows: Nama | YalenaAI;; Versi | 2.4.5;; Developer | Zann
+footer: © YalenaAI (opsional)
 [/RICH:LIST]
 
 5. STICKER (saat user minta sticker, atau untuk ekspresi emosi):
 [RICH:STICKER]
 url: https://iili.io/BPBdFuj.md.jpg
-packname: Rimuru AI (opsional)
+packname: YalenaAI (opsional)
 author: AutoAI (opsional)
 [/RICH:STICKER]
 
@@ -446,7 +446,7 @@ async function sendRichMessage(rich, sock, jid, quoted) {
         return false;
       }
       await sock.sendImageAsSticker(jid, stickerInput, quoted, {
-        packname: packname || config.bot?.name || "Rimuru AI",
+        packname: packname || config.bot?.name || "YalenaAI",
         author: author || "AutoAI",
       });
       return true;
