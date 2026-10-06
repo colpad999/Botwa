@@ -196,13 +196,26 @@ function checkMode(m, getActiveJadibots) {
     };
   }
 
-  if (onlyGc && !m.isGroup && !m.isOwner) return { allowed: false };
-  if (onlyPc && m.isGroup && !m.isOwner) return { allowed: false };
+  if (onlyGc && !m.isGroup && !m.isOwner) {
+    return {
+      allowed: false,
+      denialMessage: "🔒 Bot sedang dalam mode hanya grup.",
+    };
+  }
+  if (onlyPc && m.isGroup && !m.isOwner) {
+    return {
+      allowed: false,
+      denialMessage: "🔒 Bot sedang dalam mode hanya chat pribadi.",
+    };
+  }
 
   const onlyThisGroup = db.setting("onlyThisGroup");
   if (onlyThisGroup && m.isGroup && !m.isOwner) {
     if (typeof onlyThisGroup === "string" && m.chat !== onlyThisGroup) {
-      return { allowed: false };
+      return {
+        allowed: false,
+        denialMessage: "🔒 Bot hanya dapat digunakan di grup utama.",
+      };
     } else if (typeof onlyThisGroup === "object" && m.chat !== onlyThisGroup.jid) {
       return {
         allowed: false,
@@ -221,7 +234,10 @@ function checkMode(m, getActiveJadibots) {
   if (m.isGroup && selfGroups.includes(m.chat)) {
     if (m.fromMe) return { allowed: true };
     if (m.isOwner) return { allowed: true };
-    return { allowed: false, isSelfGroup: true };
+    return {
+      allowed: false,
+      denialMessage: "🔒 Grup ini menggunakan mode self; hanya owner bot yang dapat menggunakan perintah.",
+    };
   }
 
   const publicGroups = db.setting("publicGroups") || [];
@@ -255,7 +271,10 @@ function checkMode(m, getActiveJadibots) {
       };
     }
 
-    return { allowed: false };
+    return {
+      allowed: false,
+      denialMessage: "🔒 Bot sedang dalam mode private; hanya owner bot yang dapat menggunakan perintah.",
+    };
   }
 
   if (mode === "public") {
@@ -265,20 +284,29 @@ function checkMode(m, getActiveJadibots) {
       if (m.fromMe || m.isOwner) return { allowed: true };
       if (!m.isGroup) return { allowed: true };
       if (m.isGroup && m.isAdmin) return { allowed: true };
-      return { allowed: false };
+      return {
+        allowed: false,
+        denialMessage: "🔒 Mode admin aktif; hanya admin grup yang dapat menggunakan perintah.",
+      };
     }
 
     if (selfAdmin) {
       if (m.fromMe || m.isOwner) return { allowed: true };
       if (m.isGroup && m.isAdmin) return { allowed: true };
-      return { allowed: false };
+      return {
+        allowed: false,
+        denialMessage: "🔒 Mode admin aktif; hanya admin grup yang dapat menggunakan perintah.",
+      };
     }
 
     if (publicAdmin) {
       if (m.fromMe || m.isOwner) return { allowed: true };
       if (!m.isGroup) return { allowed: true };
       if (m.isGroup && m.isAdmin) return { allowed: true };
-      return { allowed: false };
+      return {
+        allowed: false,
+        denialMessage: "🔒 Mode admin aktif; hanya admin grup yang dapat menggunakan perintah.",
+      };
     }
 
     return { allowed: true };

@@ -1,10 +1,14 @@
 {
-  "commandsExecuted": 13,
-  "command_ping": 2,
-  "command_menu": 4,
-  "command_s": 3,
+  "commandsExecuted": 37,
+  "command_ping": 8,
+  "command_menu": 13,
+  "command_s": 4,
   "command_allmenu": 1,
   "command_rules": 1,
   "command_self": 1,
-  "command_owner": 1
+  "command_owner": 1,
+  "command_public": 2,
+  "command_menucat": 2,
+  "command_colong": 3,
+  "command_wm": 1
 }

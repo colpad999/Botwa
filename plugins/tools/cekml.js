@@ -29,8 +29,6 @@ Yalena Bot adalah SC hasil rename dari SC Ourin MD.
 export const FEATURE_CREDIT = "Fitur By: colpad\nFitur SC Bot Yalena Bot 👑\nTiktok: https://tiktok.com/@anita.putri.azzah1\nSaluran Resmi: https://whatsapp.com/channel/0029VazvN8I9xVJgSsIBv02Y";
 
 
-import safeJson from "../../src/lib/rimuru-safe-json.js";
-
 let handler = async (m, { args, usedPrefix, command }) => {
   if (args.length < 2) {
     return m.reply(`Example:\n${usedPrefix + command} id zone`)
@@ -47,7 +45,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
 
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
 
-    const data = await safeJson(res)
+    const data = await res.json()
     if (!data?.status || !data?.result) throw new Error('Data tidak ditemukan')
 
     const result = data.result

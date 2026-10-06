@@ -871,6 +871,8 @@ async function messageHandler(msg, sock, options = {}) {
         );
       } else if (modeCheck.isOnlyThisGroup && m.isCommand) {
         await m.reply(modeCheck.onlyThisGroupMessage);
+      } else if (modeCheck.denialMessage && m.isCommand) {
+        await m.reply(modeCheck.denialMessage);
       }
       return;
     }
@@ -891,7 +893,9 @@ async function messageHandler(msg, sock, options = {}) {
     if (m.isGroup && m.isCommand && !m.isOwner) {
       const groupData = db.getGroup(m.chat) || {};
       if (groupData.isBanned) {
-        // kalau mau nambih text juga boleh bang, pake m.reply atau sendMessage
+        await m.reply(
+          "🔒 Bot sedang dinonaktifkan untuk grup ini. Hubungi owner bot untuk mengaktifkannya kembali.",
+        );
         return;
       }
     }

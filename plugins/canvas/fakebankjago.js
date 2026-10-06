@@ -26,10 +26,19 @@ Yalena Bot adalah SC hasil rename dari SC Ourin MD.
                  「 👑 𝑹𝑰𝑴𝑼𝑹𝑼 𝑴𝑫 👑 」
 */
 
-import { Canvas, loadImage, FontLibrary } from 'skia-canvas'
 import fs from 'fs'
 import path from 'path'
 import te from '../../src/lib/rimuru-error.js'
+
+let skiaCanvasPromise = null;
+
+async function getCanvasLib() {
+  if (!skiaCanvasPromise) {
+    skiaCanvasPromise = import('skia-canvas').catch(() => null);
+  }
+  return skiaCanvasPromise;
+}
+
 async function ensureFile(url, file) {
   const dir = path.dirname(file)
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
@@ -41,6 +50,13 @@ async function ensureFile(url, file) {
 }
 
 async function generateImage(saldo, greet) {
+  const skia = await getCanvasLib();
+  if (!skia) {
+    throw new Error('Fitur canvas tidak tersedia karena skia-canvas gagal dimuat di environment ini.');
+  }
+
+  const { Canvas, loadImage, FontLibrary } = skia;
+
   const bgUrl = "https://raw.githubusercontent.com/uploader762/dat2/main/uploads/52e39f-1773064858080.jpg"
   const fontUrl = "https://raw.githubusercontent.com/uploader762/dat2/main/uploads/49bbd8-1773045557233.otf"
   const font2Url = "https://raw.githubusercontent.com/uploader762/dat1/main/uploads/203827-1773063086445.ttf"

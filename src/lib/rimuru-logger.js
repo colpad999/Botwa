@@ -169,7 +169,7 @@ async function playBootSequence(info = {}) {
         ██║  ██║██║ ╚████║██║   ██║   ██║  ██║
         ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝  ╚═╝
 `));
-  console.log(`         ${chalk.magenta.bold("►")} ${chalk.white("ANITA MULTI-DEVICE BOT")} ${chalk.gray(`v${version}`)}`);
+  console.log(`         ${chalk.magenta.bold("►")} ${chalk.white("COLPAD MULTI-DEVICE BOT")} ${chalk.gray(`v${version}`)}`);
   console.log(`         ${chalk.magenta("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")}`);
   console.log("");
   console.log(`${makeTag("BOOT", true)} ${cWhite(`Memulai Sistem Utama...`)}`);

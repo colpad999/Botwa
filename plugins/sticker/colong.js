@@ -54,8 +54,8 @@ async function handler(m, { sock, config: botConfig }) {
             `> Reply sticker dengan caption:\n` +
             `> \`${m.prefix}swm packname\`\n\n` +
             `*ᴄᴏɴᴛᴏʜ:*\n` +
-            `> \`${m.prefix}swm Rimuru-AI\`\n` +
-            `> \`${m.prefix}swm Rimuru-AI|LuckyArchz\` _(packname + author)_`
+            `> \`${m.prefix}swm Yalena Bot\`\n` +
+            `> \`${m.prefix}swm Yalena Bot|Colpad\` _(packname + author)_`
         )
     }
     
@@ -70,8 +70,8 @@ async function handler(m, { sock, config: botConfig }) {
             `❌ *ɢᴀɢᴀʟ*\n\n` +
             `> Masukkan packname\n\n` +
             `*ᴄᴏɴᴛᴏʜ:*\n` +
-            `> \`${m.prefix}swm Rimuru-AI\`\n` +
-            `> \`${m.prefix}swm Rimuru-AI|LuckyArchz\` _(+ author)_`
+            `> \`${m.prefix}swm Yalena Bot\`\n` +
+            `> \`${m.prefix}swm Yalena Bot|Colpad\` _(+ author)_`
         )
     }
     

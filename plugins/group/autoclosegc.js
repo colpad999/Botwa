@@ -1,7 +1,7 @@
 /**
  * ╔══════════════════════════════════════════════════════════════════════════╗
  * ║ OCGC — Otomatis Close / Open Group                                   ║
- * ║ Struktur plugin Yalena-Bot v4.5                                        ║
+ * ║ Struktur plugin Yalena Bot v4.5                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════╝
  *
  * Penggunaan:

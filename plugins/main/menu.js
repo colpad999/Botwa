@@ -129,13 +129,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
   const total = categories.reduce((n, x) => n + x.count, 0);
   const role = m.isOwner ? "👑 Owner" : m.isPremium ? "💎 Premium" : "🏷️ Free";
 
-  let video;
-  try {
-    video = botConfig.assets?.["rimuru-mp4"];
-    if (!video) throw new Error("asset unavailable");
-  } catch {
-    return m.reply("❌ Video menu tidak ditemukan di assets.");
-  }
+  const video = botConfig.assets?.["rimuru-mp4"];
 
   let thumbnail = null;
   const rimuruAsset = getAssetBuffer("rimuru", botConfig.assets);
@@ -172,12 +166,16 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 `┃  ${pretty("Versi")}   : ${botConfig.bot?.version || "-"}\n` +
 `┃  ${pretty("Uptime")}  : ${runtime}\n` +
 `┗━━━━━━━━━━━━━━━━━━┛\n` +
-`🤖  ${pretty("BOT AUTO ORDER")}\n` +
-`▸ t.me/kyizzxautoorder_bof\n` +
+`🤖  ${pretty("Tele")}\n` +
+`▸ t.me/Beginer_Magisk\n` +
 `╭─ ${pretty("MENU UTAMA")} ─╮\n` +
 `│ ✦ Pilih kategori lewat tombol di bawah.\n` +
 `│ ✦ Setiap kategori langsung membuka ${pretty(".menucat")} .\n` +
 `╰──────────────────╯`;
+
+  if (!video) {
+    return m.reply("❌ Video menu tidak ditemukan di assets.");
+  }
 
   let media;
   try {

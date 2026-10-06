@@ -913,6 +913,20 @@ async function serialize(sock, msg, store = {}) {
 
     let quotedMsg = options.quoted !== false ? msg : undefined;
 
+    if (m.isGroup) {
+      return sock.sendMessage(
+        await ensureResolved(m.chat),
+        {
+          text,
+          ...defaultOptions,
+          ...options,
+        },
+        {
+          quoted: quotedMsg,
+        },
+      );
+    }
+
     if (replyVariant === 2) {
       let troliThumbnail = null;
       quotedMsg = {
