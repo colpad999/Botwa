@@ -21,7 +21,7 @@ async function handler(m, { sock }) {
         { name: 'Hair', role: 'Feature Developer', icon: '👨‍💻' },
         { name: 'Albert', role: 'Partner', icon: '🛒' },
         { name: 'Bima', role: 'Partner', icon: '🛒' },
-        { name: 'Zanspiw', role: 'Youtuber', icon: '🌐' }
+        { name: 'Colpad', role: 'Youtuber', icon: '🌐' }
     ]
 
     await m.reply(`🍟 *Berikut ini adalah orang-orang yang berkontribusi di bot ${config.bot?.name || 'Yalena Bot'}*

@@ -107,7 +107,7 @@ async function handler(m, { sock }) {
         { name: 'Taka', role: 'Partner', icon: '🛒' },
         { name: 'Tatskuyy', role: 'Partner', icon: '🛒' },
         { name: 'Yann', role: 'Partner', icon: '🛒' },
-        { name: 'Zanspiw', role: 'Youtuber', icon: '🌐' },
+        { name: 'Colpad', role: 'Youtuber', icon: '🌐' },
         { name: 'Danzz Nano', role: 'Youtuber', icon: '🌐' },
         { name: 'Youtuber Lain yang udah review', role: 'Youtuber', icon: '🌐' },
         { name: 'Kalian Semua', role: 'Best', icon: '🌐' },

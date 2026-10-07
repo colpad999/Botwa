@@ -51,12 +51,12 @@ async function handler(m, { sock }) {
         caption: `🌾 Halo kak *${m.pushName}*
         
 Untuk asli dari bot ini, kamu bisa dapatkan melalui link, nanti kamu tinggal cari kata kunci *Yalena Bot*`,
-        footer: "💬 Link ini nanti akan mengarahkan kamu ke Youtube *Zanspiw*",
+        footer: "💬 Link ini nanti akan mengarahkan kamu ke Youtube *Colpad*",
         interactiveButtons: [
             {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: "🥐 Kunjungi Youtube Zanspiw",
+                    display_text: "🥐 Kunjungi Youtube Colpad",
                     url: "https://youtube.com/@JanpiwWok",
                     merchant_url: "https://youtube.com/@JanpiwWok"
                 })
