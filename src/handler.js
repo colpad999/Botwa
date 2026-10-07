@@ -592,6 +592,17 @@ async function messageHandler(msg, sock, options = {}) {
     try {
       m = await serialize(sock, msg);
     } catch (serializeErr) {
+      logger.error("handler", `Failed to serialize message: ${serializeErr.message}`);
+      const chat = msg.key?.remoteJid;
+      if (chat?.endsWith("@g.us")) {
+        try {
+          await sock.sendMessage(chat, {
+            text: "Pesan gagal diproses. Coba ulangi command atau hubungi owner bot.",
+          });
+        } catch (sendError) {
+          logger.error("handler", `Failed to notify group about serialization error: ${sendError.message}`);
+        }
+      }
       return;
     }
 
@@ -1948,12 +1959,17 @@ async function messageHandler(msg, sock, options = {}) {
     } catch { }
 
     try {
-      const m = await serialize(sock, msg);
-      if (m) {
-        await m.reply(`Sepertinya ada kendala, coba hubungi owner`);
-      }
-    } catch {
-      logger.error("Failed to send error message");
+      const groupJid = msg.key?.remoteJid;
+      const chat = groupJid?.endsWith("@g.us")
+        ? groupJid
+        : (await serialize(sock, msg))?.chat;
+      if (!chat) throw new Error("Unable to resolve chat for error notification");
+
+      await sock.sendMessage(chat, {
+        text: "Sepertinya ada kendala, coba hubungi owner",
+      });
+    } catch (sendError) {
+      logger.error("handler", `Failed to send error message: ${sendError.message}`);
     }
   }
 }

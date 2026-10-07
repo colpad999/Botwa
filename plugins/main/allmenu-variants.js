@@ -181,16 +181,24 @@ async function legacyAllMenuHandler(m, { sock, config: botConfig, db, uptime }) 
     caption += makeSection(CATEGORY_NAMES[section.category] || `${section.category.toUpperCase()} MENU`, section.commands.map((cmd) => `${prefix}${cmd}`));
   }
 
+  if (m.isGroup) {
+    await sock.sendMessage(m.chat, { text: caption });
+    return;
+  }
+
+  const image = getAssetBuffer("rimuru-v8", botConfig.assets);
   await sock.sendMessage(
     m.chat,
-    {
-      image: { url: botConfig.assets?.["rimuru-v8"] },
-      caption,
-      contextInfo: {
-        forwardingScore: 999,
-        isForwarded: true,
-      },
-    },
+    image
+      ? {
+          image,
+          caption,
+          contextInfo: {
+            forwardingScore: 999,
+            isForwarded: true,
+          },
+        }
+      : { text: caption },
     { quoted: m },
   );
 }
@@ -255,13 +263,18 @@ async function externalDefaultAllMenuHandler(m, { sock, config: botConfig, db })
   const body = `> Halo *${pushName}* 👋 Perkenalkan aku *${botName}*, buatan *${devName}*. Saya siap membantu kebutuhanmu, mulai dari download video, main game, tanya jawab, nyari info/sesuatu, bikin sticker, dan lain-lain.\n\n`;
   const txt = `✦ *Informasi User*\n• Nama   : ${pushName}\n• Status : ${m.isOwner ? "Owner" : m.isPremium ? "Premium" : "User"}\n\n✦ *Informasi Bot*\n• Nama   : ${botName}\n• Fitur  : ${total} fitur\n\n${lines.join("\n")}`;
 
-  const imageUrl = botConfig.assets?.["rimuru"];
-  if (!imageUrl) {
-    await m.reply(body + txt);
+  if (m.isGroup) {
+    await sock.sendMessage(m.chat, { text: `${body}${txt}` });
     return;
   }
 
-  const media = await prepareWAMessageMedia({ image: { url: imageUrl } }, { upload: sock.waUploadToServer });
+  const image = getAssetBuffer("rimuru", botConfig.assets);
+  if (!image) {
+    await sock.sendMessage(m.chat, { text: `${body}${txt}` }, { quoted: m });
+    return;
+  }
+
+  const media = await prepareWAMessageMedia({ image }, { upload: sock.waUploadToServer });
   const message = generateWAMessageFromContent(m.chat, {
     viewOnceMessage: {
       message: {

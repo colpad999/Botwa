@@ -914,15 +914,28 @@ async function serialize(sock, msg, store = {}) {
     let quotedMsg = options.quoted !== false ? msg : undefined;
 
     if (m.isGroup) {
+      const {
+        mentions,
+        quoted,
+        contextInfo: customContextInfo,
+        ...messageOptions
+      } = options;
+      const groupContextInfo = {
+        ...customContextInfo,
+        ...(mentions ? { mentionedJid: mentions } : {}),
+      };
+
       return sock.sendMessage(
         await ensureResolved(m.chat),
         {
           text,
-          ...defaultOptions,
-          ...options,
+          ...messageOptions,
+          ...(Object.keys(groupContextInfo).length
+            ? { contextInfo: groupContextInfo }
+            : {}),
         },
         {
-          quoted: quotedMsg,
+          quoted: quoted || undefined,
         },
       );
     }

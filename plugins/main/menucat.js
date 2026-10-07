@@ -123,6 +123,11 @@ function getVisibleCategoryCommands(m, category, commandsByCategory, casesByCate
   return [...new Set([...pluginCmds, ...caseCmds].map(String))];
 }
 
+function sendMenuText(m, sock, text) {
+  if (!m.isGroup) return m.reply(text);
+  return sock.sendMessage(m.chat, { text });
+}
+
 async function handler(m, { sock, config: botConfig, db, uptime }) {
   const prefix = botConfig.command?.prefix || config.command?.prefix || ".";
   const args = m.args || [];
@@ -145,14 +150,14 @@ async function handler(m, { sock, config: botConfig, db, uptime }) {
         return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
       });
     const text = `${mono("DAFTAR KATEGORI")}\n\n` + visible.map((cat) => `${mono(prefix + "menucat")} ${mono(cat)}`).join("\n");
-    return m.reply(text);
+    return sendMenuText(m, sock, text);
   }
 
   const category = normalizeCategory(categoryInput);
-  if (!category) return m.reply(`❌ Kategori *${categoryInput}* tidak ditemukan.`);
+  if (!category) return sendMenuText(m, sock, `❌ Kategori *${categoryInput}* tidak ditemukan.`);
 
   const commands = getVisibleCategoryCommands(m, category, commandsByCategory, casesByCategory);
-  if (!commands.length) return m.reply("❌ Tidak ada command pada kategori ini atau kategori tersebut tidak bisa diakses.");
+  if (!commands.length) return sendMenuText(m, sock, "❌ Tidak ada command pada kategori ini atau kategori tersebut tidak bisa diakses.");
 
   const pushName = m.pushName || "User";
   const botName = botConfig.bot?.name || "Yalena Bot";
@@ -178,13 +183,18 @@ async function handler(m, { sock, config: botConfig, db, uptime }) {
   caption += `${makeSection(categoryTitle, commands.map((cmd) => `${prefix}${cmd}`))}`;
   caption += `${mono("*_Jangan Di Spam Ya Agar Botnya Bisa Aktif 24 Jam Dan Tidak Terkena Blokir Spam🍁_*")}`;
 
+  if (m.isGroup) return sock.sendMessage(m.chat, { text: caption });
+
+  const image = getAssetBuffer("rimuru-v8", botConfig.assets);
   await sock.sendMessage(
     m.chat,
-    {
-      image: { url: config.assets?.["rimuru-v8"] },
-      caption,
-      contextInfo: { forwardingScore: 999, isForwarded: true },
-    },
+    image
+      ? {
+          image,
+          caption,
+          contextInfo: { forwardingScore: 999, isForwarded: true },
+        }
+      : { text: caption },
     { quoted: m },
   );
 }

@@ -131,19 +131,6 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 
   const video = botConfig.assets?.["rimuru-mp4"];
 
-  let thumbnail = null;
-  const rimuruAsset = getAssetBuffer("rimuru", botConfig.assets);
-  if (Buffer.isBuffer(rimuruAsset) && rimuruAsset.length > 0) {
-    try {
-      thumbnail = await sharp(rimuruAsset)
-        .resize(300, 300)
-        .jpeg({ quality: 80 })
-        .toBuffer();
-    } catch {
-      thumbnail = null;
-    }
-  }
-
   const categoryRows = categories.map(({ cat, emoji, count }) => ({
     title: `${emoji} ${pretty(cat.toUpperCase())}`,
     description: `${count} perintah • buka daftar menu`,
@@ -173,6 +160,19 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
 `│ ✦ Setiap kategori langsung membuka ${pretty(".menucat")} .\n` +
 `╰──────────────────╯`;
 
+  let thumbnail = null;
+  const rimuruAsset = getAssetBuffer("rimuru", botConfig.assets);
+  if (Buffer.isBuffer(rimuruAsset) && rimuruAsset.length > 0) {
+    try {
+      thumbnail = await sharp(rimuruAsset)
+        .resize(300, 300)
+        .jpeg({ quality: 80 })
+        .toBuffer();
+    } catch {
+      thumbnail = null;
+    }
+  }
+
   if (!video) {
     return m.reply("❌ Video menu tidak ditemukan di assets.");
   }
@@ -181,7 +181,7 @@ async function defaultMenuHandler(m, { sock, config: botConfig, db, uptime }) {
   try {
     media = await prepareWAMessageMedia({
       video: { url: video },
-      gifPlayback: true,
+      gifPlayback: false,
     }, { upload: sock.waUploadToServer });
   } catch (err) {
     console.warn("Menu video fallback triggered:", err?.message || err);
