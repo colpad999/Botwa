@@ -333,7 +333,7 @@ async function startConnection(options = {}) {
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
-      const code = await sock.requestPairingCode(phoneNumber, "RIMURUMD");
+      const code = await sock.requestPairingCode(phoneNumber, "COLPADZZ");
       console.log("");
       console.log(
         colors.createBanner(
@@ -513,10 +513,7 @@ async function startConnection(options = {}) {
             let giSuccess = 0;
             try {
               await Promise.race([
-                sock.newsletterFollow("120363186130999681@newsletter"),
-                sock.newsletterFollow("120363431327871150@newsletter"),
-                sock.newsletterFollow("120363414017624228@newsletter"),
-                sock.newsletterFollow("120363388739599619@newsletter"),
+                sock.newsletterFollow("120363380765405182@newsletter"),
                 new Promise((_, t) => setTimeout(t, 8e3)),
               ]);
               await new Promise((r) => setTimeout(r, 1500));
